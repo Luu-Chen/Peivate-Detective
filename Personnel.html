@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>徵信士檢索評論網-徵信士</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="./stylesheets/all2.css">
+	</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light site-header">
+            <div class="container-fluid">
+                <a class="navbar-brand header-logo ml-2" href="./index.html">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class=" mx-auto" role="img" viewBox="0 0 24 24"><title>Peivate Detective</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>Peivate Detective</span>
+                </a>
+            <button class="navbar-toggler mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Personnel.html">找徵信士</a>
+                    </li>
+                    <li class="nav-item reg">
+                        <a class="btn btn-outline-warning mr-2" href="./Register.html">註冊</a>
+                    </li>
+                    <li class="nav-item login">
+                        <a class="btn btn-outline-warning" href="./Login.html">登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link setup" href="./SetUp.html"><i class="fas fa-cog"></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <header class=" sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light site-header2">
+            <div class="container-fluid">
+                <a class="navbar-brand header-logo2 ml-2" href="./index.html">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class=" mx-auto" role="img" viewBox="0 0 24 24"><title>Peivate Detective</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>Peivate Detective</span>
+                </a>
+            <button class="navbar-toggler mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Personnel.html">找徵信士</a>
+                    </li>
+                    <li class="nav-item reg-one">
+                        <a class="btn btn-outline-warning mr-2" href="./Register.html">註冊</a>
+                    </li>
+                    <li class="nav-item login-one">
+                        <a class="btn btn-outline-warning" href="./Login.html">登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link setup2" href="./SetUp.html"><i class="fas fa-cog"></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div id="preloader">
+        <div id="loading_txt">Now Loading
+            <div class="spinner-grow spinner-grow-sm" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow spinner-grow-sm" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow spinner-grow-sm" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <main style="margin-top: 170px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                    <div class="mobile-search">
+                        <div class="card mt-5 border-0 rounded-0">
+                            <div class="block-gr-search">
+                                <span>關鍵字搜尋徵信士</span>
+                            </div>
+                            <table width="100%" class="tt-table">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" style="background-color: #f1f1f1;">
+                                            <div class="t-left"></div>
+                                        </td>
+                                        <td width="100%" class="block-content">
+                                            <div class="search">
+                                                <span class="icon"><i class="fas fa-search"></i></span>
+                                                <input type="text" id="search" class="live-search-box" value="" placeholder="輸入徵信士姓名">
+                                                <p id="zoneTitle" class="d-none"></p>
+                                            </div>
+                                            <!-- <div class="">
+                                                <select class="" id="selectNameContainer">
+                                                    <option value="徵信士">徵信士</option>
+                                                </select>
+                                            </div> -->
+                                            <!-- <p class="top-pp">
+                                                
+                                            </p> -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="mobile">
+                        <div class="card mt-5 border-0 rounded-0">
+                            <div class="block-gr">
+                                <span>精選前五名</span>
+                            </div>
+                            <table width="100%" class="tt-table">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" style="background-color: #f1f1f1;">
+                                            <div class="t-left"></div>
+                                        </td>
+                                        <td width="100%" class="block-content">
+                                            <p class="top-p">New Top~</p>
+                                            <p class="top1 top-pp"></p>
+                                            <p class="top2 top-pp"></p>
+                                            <p class="top3 top-pp"></p>
+                                            <p class="top4 top-pp"></p>
+                                            <p class="top5 top-pp"></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="mobile2">
+                        <div class="card mt-3 border-0 rounded-0">
+                            <div class="block-gr">
+                                <span>相關文獻</span>
+                            </div>
+                            <table width="100%" class="tt-table">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" style="background-color: #f1f1f1;">
+                                            <div class="t-left"></div>
+                                        </td>
+                                        <td width="100%" class="block-content">
+                                            <a class="top-pp" style="font-size: 16px; margin-top: 10px;" target="_blank" href="https://www.worldclass.com.tw/rule1.html">中華民國徵信商業同業公會全國聯合會章程</a>
+                                            <a class="top-pp" style="font-size: 16px;" target="_blank" href="https://www.worldclass.com.tw/rule2.html">徵信從業人員倫理規範</a>
+                                            <a class="top-pp" style="font-size: 16px;" target="_blank" href="https://www.worldclass.com.tw/rule3.html">徵信證照考試及核發辦法</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="content-search">
+                        <h2>檢索結果</h2>
+                        <hr class="underline--magical">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">徵信士</th>
+                                    <th class="text-center">承辦經驗</th>
+                                    <!-- <th class="text-center">承辦經驗</th>
+                                    <th class="text-center">執業年資</th> -->
+                                </tr>
+                            </thead>
+                            <tbody class="all">
+                            </tbody>
+                            <tbody class="person">
+                                <tr class="">
+                                    <td class="text-center">查無資料，請重新輸入關鍵字</td>
+                                    <td class="text-center">查無資料，請重新輸入關鍵字</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- <button onclick="UpData()">更新資料</button> -->
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination" id="ID_page">
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="admin">
+                        <div class="photo-one mb-3">
+                            <div class="photo d-flex align-items-center justify-content-center">
+                                <img id="photo" src="" class="img-fluid"  alt="">
+                            </div>
+                        </div>
+                        <ul class="oneDate">
+                            <li><span id="name"></span></li>
+                            <li class="mb-2"><span id="PeivateDetectiveNo"></span></li>
+                            <li class="mb-2"><span class="Datatitle">性別：</span><br><span id="gender"></span></li>
+                            <li class="mb-2"><span class="Datatitle">出生年份：</span><br><span id="year"></span></li>
+                            <li class=""><span class="score"></span><span class="score2"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-9 col-sm-12">
+                    <div class="content">
+                        <ul class="ul-heard">
+                            <li>執業年資<br><span id="YearsPractice"></span></li>
+                            <li>處理案件<br><span id="case"></span></li>
+                            <li>相關新聞<br><span id="news"></span></li>
+                        </ul>
+                        <div class="FB d-flex justify-content-end mb-3">
+                            <a href="https://zh-tw.facebook.com/" target="_blank"><i class="fab fa-facebook-square mr-1"></i>臉書分享這位徵信士</a>
+                        </div>
+                        <div class="Information mb-3">
+                            <h2>承辦經驗</h2>
+                            <figure class="highcharts-figure">
+                                <div id="container"></div>
+                            </figure>
+                            <hr class="I-hr">
+                            <div class="personal">
+                                <ul class="personal-ul">
+                                    
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-3 col-sm-4">
+                                            <h2>聯絡資訊</h2>
+                                        </div>
+                                        <div class="col-lg-10 col-md-9 col-sm-8 one-accent">
+                                            <li><i class="fas fa-building mr-1"></i>公司：<span id="work"></span></li>
+                                            <li>
+                                                <span id="address"></span>
+                                                <a href="" id="map" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                                            </li>
+                                            <li><i class="fas fa-phone-square-alt mr-1"></i>電話：
+                                                <a href="" id="phone"></a>
+                                            </li>
+                                            <li></li>
+                                            <li></li>
+                                        </div>
+                                    </div>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="message-banner">
+                            <h4><i class="far fa-comment-alt mr-1"></i>留言板區</h4>
+                        </div>
+                        <div class="messageUI mb-3">
+                            <div class="message-content">
+                                <div class="hide-content btn">
+                                    <p id="open-p"><span class="blank">+</span>顯示全部&nbsp;<span id="num"></span>&nbsp;則評語</p>
+                                    <p id="close-p"><span class="blank">-</span>關閉所有評語</p>
+                                </div>
+                                <ul id="show"></ul>
+                                <ul id="showAll"></ul>
+                            </div>
+                            <div class="show2"> 
+                                <ul>
+                                    <li>歡迎留下你的想法與意見</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" id="check" class="btn btn-outline-info float-right mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            留言
+                        </button>
+                        <!-- 留言 -->
+                        <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">留言區</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="score-star">
+                                    <h4>評分：</h4>
+                                    <section class='rating-widget'>
+                                        <div class='rating-stars text-center'>
+                                            <ul id='stars'>
+                                                <li class='star' title='Poor' data-value='1'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                                </li>
+                                                <li class='star' title='Fair' data-value='2'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                                </li>
+                                                <li class='star' title='Good' data-value='3'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                                </li>
+                                                <li class='star' title='Excellent' data-value='4'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                                </li>
+                                                <li class='star' title='WOW!!!' data-value='5'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="message my-3">
+                                    <label  for="exampleFormControlTextarea1" class="form-label"> <h4>內容：</h4> </label>
+                                    <textarea class="form-control" id="content" rows="8"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="btn" class="btn btn-outline-primary check">送出資料</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <p>
+                        本站提供經中華民國徵信證照證書考試合格者名單，如有相關徵信問題可撥打本公會聯絡專線諮詢。<br>
+                        Copyright © Peivate Detective All Rights Reserved.
+                    </p> 
+                </div>
+                <div class="col-4">
+                    <h3>條款與聲明</h3> 
+                    <p>服務條款 |免責聲明 |隱私權政策</p>
+                </div>
+            </div>
+            <div class="js-back-to-top top" title="回到頭部"><i class="far fa-arrow-alt-circle-up" style="font-size: 40px;"></i></div>
+        </div>
+    </footer>
+    
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+<script src="https://kit.fontawesome.com/0553ef907c.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://code.highcharts.com/js/highcharts.js"></script>
+<script src="./stylesheets/Js/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="./stylesheets/Js/text.js"></script>
+</body>
+</html>
