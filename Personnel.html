@@ -2,74 +2,22 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="description" content="">
+		<meta name="generator" content="徵信士檢索評論網">
+        <link rel="shortcut icon" href="/images/favicon/favicon.ico">
 		<title>徵信士檢索評論網-徵信士</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<link rel="stylesheet" href="./stylesheets/bootstrap.min.css">        
         <link rel="stylesheet" href="./stylesheets/all2.css">
+        <link rel="stylesheet" href="./stylesheets/navbar.css">
 	</head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light site-header">
-            <div class="container-fluid">
-                <a class="navbar-brand header-logo ml-2" href="./index.html">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class=" mx-auto" role="img" viewBox="0 0 24 24"><title>Peivate Detective</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>Peivate Detective</span>
-                </a>
-            <button class="navbar-toggler mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Personnel.html">找徵信士</a>
-                    </li>
-                    <li class="nav-item reg">
-                        <a class="btn btn-outline-warning mr-2" href="./Register.html">註冊</a>
-                    </li>
-                    <li class="nav-item login">
-                        <a class="btn btn-outline-warning" href="./Login.html">登入</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link setup" href="./SetUp.html"><i class="fas fa-cog"></i></a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-    </header>
-    <header class=" sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light site-header2">
-            <div class="container-fluid">
-                <a class="navbar-brand header-logo2 ml-2" href="./index.html">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class=" mx-auto" role="img" viewBox="0 0 24 24"><title>Peivate Detective</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>Peivate Detective</span>
-                </a>
-            <button class="navbar-toggler mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Personnel.html">找徵信士</a>
-                    </li>
-                    <li class="nav-item reg-one">
-                        <a class="btn btn-outline-warning mr-2" href="./Register.html">註冊</a>
-                    </li>
-                    <li class="nav-item login-one">
-                        <a class="btn btn-outline-warning" href="./Login.html">登入</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link setup2" href="./SetUp.html"><i class="fas fa-cog"></i></a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
+        <div id="Nav">
+            <navbar></navbar>
+        </div>
     </header>
     <div id="preloader">
         <div id="loading_txt">Now Loading
@@ -84,7 +32,7 @@
             </div>
         </div>
     </div>
-    <main style="margin-top: 170px;">
+    <main  class="personnel-main">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
@@ -105,14 +53,6 @@
                                                 <input type="text" id="search" class="live-search-box" value="" placeholder="輸入徵信士姓名">
                                                 <p id="zoneTitle" class="d-none"></p>
                                             </div>
-                                            <!-- <div class="">
-                                                <select class="" id="selectNameContainer">
-                                                    <option value="徵信士">徵信士</option>
-                                                </select>
-                                            </div> -->
-                                            <!-- <p class="top-pp">
-                                                
-                                            </p> -->
                                         </td>
                                     </tr>
                                 </tbody>
@@ -187,16 +127,14 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <!-- <button onclick="UpData()">更新資料</button> -->
                     </div>
                     <div class="d-flex justify-content-center">
-                        <nav aria-label="Page navigation example">
+                        <pag aria-label="Page navigation example">
                             <ul class="pagination" id="ID_page">
                             </ul>
-                        </nav>
+                        </pag>
                     </div>
                 </div>
-
                 <div class="col-lg-3 col-md-3 col-sm-12">
                     <div class="admin">
                         <div class="photo-one mb-3">
@@ -217,7 +155,7 @@
                     <div class="content">
                         <ul class="ul-heard">
                             <li>執業年資<br><span id="YearsPractice"></span></li>
-                            <li>處理案件<br><span id="case"></span></li>
+                            <li>處理案件<br><span id="Onecase"></span></li>
                             <li>相關新聞<br><span id="news"></span></li>
                         </ul>
                         <div class="FB d-flex justify-content-end mb-3">
@@ -245,11 +183,8 @@
                                             <li><i class="fas fa-phone-square-alt mr-1"></i>電話：
                                                 <a href="" id="phone"></a>
                                             </li>
-                                            <li></li>
-                                            <li></li>
                                         </div>
-                                    </div>
-                                    
+                                    </div>                                    
                                 </ul>
                             </div>
                         </div>
@@ -275,49 +210,80 @@
                             留言
                         </button>
                         <!-- 留言 -->
-                        <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">留言區</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="score-star">
-                                    <h4>評分：</h4>
-                                    <section class='rating-widget'>
-                                        <div class='rating-stars text-center'>
-                                            <ul id='stars'>
-                                                <li class='star' title='Poor' data-value='1'>
-                                                <i class='fa fa-star fa-fw'></i>
-                                                </li>
-                                                <li class='star' title='Fair' data-value='2'>
-                                                <i class='fa fa-star fa-fw'></i>
-                                                </li>
-                                                <li class='star' title='Good' data-value='3'>
-                                                <i class='fa fa-star fa-fw'></i>
-                                                </li>
-                                                <li class='star' title='Excellent' data-value='4'>
-                                                <i class='fa fa-star fa-fw'></i>
-                                                </li>
-                                                <li class='star' title='WOW!!!' data-value='5'>
-                                                <i class='fa fa-star fa-fw'></i>
-                                                </li>
-                                            </ul>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">留言區</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" id="Close_x" aria-label="Close"></button>
+                                    </div>
+                                    <!-- <div class="modal-body">
+                                        <div class="score-star">
+                                            <h4>評分：</h4>
+                                            <section class='rating-widget'>
+                                                <div class='rating-stars text-center'>
+                                                    <ul id='stars'>
+                                                        <li class='star' title='Poor' data-value='1'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                        </li>
+                                                        <li class='star' title='Fair' data-value='2'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                        </li>
+                                                        <li class='star' title='Good' data-value='3'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                        </li>
+                                                        <li class='star' title='Excellent' data-value='4'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                        </li>
+                                                        <li class='star' title='WOW!!!' data-value='5'>
+                                                        <i class='fa fa-star fa-fw'></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </section>
                                         </div>
-                                    </section>
+                                        <div class="message my-3">
+                                            <label  for="exampleFormControlTextarea1" class="form-label"> <h4>內容：</h4> </label>
+                                            <textarea class="form-control" id="content" rows="8"></textarea>
+                                        </div>
+                                    </div> -->
+                                    <div class="modal-body">                                
+                                        <div class="score-star">
+                                            <form class="row needs-validation justify-content-center"  id="score_form" novalidate>
+                                                <div class="form-group" s>
+                                                    <label for="score" class="form-label"><h4>評分</h4></label>
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex justify-content-center">
+                                                            <fieldset class="stars" id='stars'>
+                                                                <input type="radio" name="rating" id="star5" ontouchstart="ontouchstart" value="5" />
+                                                                <label class="fa fa-star StarBtn" for="star5" data-item='5'></label>                                            
+                                                                <input type="radio" name="rating" id="star4" ontouchstart="ontouchstart" value="4" />
+                                                                <label class="fa fa-star StarBtn" for="star4" data-item='4'></label>                                            
+                                                                <input type="radio" name="rating" id="star3" ontouchstart="ontouchstart" value="3" />
+                                                                <label class="fa fa-star StarBtn" for="star3" data-item='3'></label>                                            
+                                                                <input type="radio" name="rating" id="star2" ontouchstart="ontouchstart" value="2" />
+                                                                <label class="fa fa-star StarBtn" for="star2" data-item='2'></label>                                            
+                                                                <input type="radio" name="rating" id="star1" ontouchstart="ontouchstart" value="1" />
+                                                                <label class="fa fa-star StarBtn" for="star1" data-item='1'></label>                                                   
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="message my-3">
+                                                        <label  for="exampleFormControlTextarea1" class="form-label"> <h4>內容：</h4> </label>
+                                                        <textarea class="form-control" id="content" rows="8"></textarea>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn btn-outline-dark" data-bs-dismiss="modal" id="close">Close</button>
+                                        <button type="button" id="btn" class="btn btn-outline-success check"><i class="fas fa-file-import mr-2"></i>送出資料</button>
+                                    </div>
                                 </div>
-                                <div class="message my-3">
-                                    <label  for="exampleFormControlTextarea1" class="form-label"> <h4>內容：</h4> </label>
-                                    <textarea class="form-control" id="content" rows="8"></textarea>
-                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-                                <button type="button" id="btn" class="btn btn-outline-primary check">送出資料</button>
-                            </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -345,11 +311,12 @@
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
 <script src="https://kit.fontawesome.com/0553ef907c.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<script src="https://code.highcharts.com/js/highcharts.js"></script>
-<script src="./stylesheets/Js/jquery-3.4.1.min.js"></script>
+<script src="./stylesheets/Js/bootstrap.bundle.min.js"></script><script src="https://code.highcharts.com/js/highcharts.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 <script src="./stylesheets/Js/text.js"></script>
+<script src="./stylesheets/Js/Vue_v2.6.14.js"></script>
+<script src="./stylesheets/Js/main.js"></script>
 </body>
 </html>

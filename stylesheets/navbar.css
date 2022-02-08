@@ -1,0 +1,218 @@
+.snip1537 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    color: #bdbdbd;
+    margin: 0px 10px;
+    max-width: 285px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  
+  .snip1537 h1,
+  .snip1537 h5 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .snip1537 h1 {
+    font-family: 'Teko', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    line-height: 27px;
+  }
+  
+  .snip1537 h5 {
+    background-color: #bdbdbd;
+    color: #212121;
+    display: inline-block;
+    font-size: 0.6em;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .snip1537 h5:before,
+  .snip1537 h5:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    border-width: 9px 6px;
+    border-style: solid;
+    opacity: 0.8;
+  }
+  
+  .snip1537 h5:before {
+    right: 100%;
+    border-color: #bdbdbd #bdbdbd #bdbdbd transparent;
+  }
+  
+  .snip1537 h5:after {
+    left: 100%;
+    border-color: #bdbdbd transparent #bdbdbd #bdbdbd;
+  }
+  
+  .snip1537 h6 {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .snip1537 h6:before,
+  .snip1537 h6:after {
+    position: absolute;
+    height: 2px;
+    content: '';
+    width: 30px;
+    top: 50%;
+    border-top: 2px solid #bdbdbd;
+    border-bottom: 2px solid #bdbdbd;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .snip1537 h6:before {
+    left: -35px;
+  }
+  
+  .snip1537 h6:after {
+    right: -35px;
+  }
+  
+  .snip1537 i {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+
+.snip1488 {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    margin: 0;
+  }
+  .snip1488 * {
+    box-sizing: border-box;
+  }
+  .snip1488 li {
+    display: inline-block;
+    /* list-style: outside none none; */
+    /* margin: 0.5em 1em; */
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+  }
+  .snip1488 li:before,
+  .snip1488 li:after {
+    display: block;
+  }
+  .snip1488 li:before {
+    bottom: 0%;
+  }
+  .snip1488 li:after {
+    bottom: 50%;
+  }
+  .snip1488 a {
+    /* backface-visibility: hidden; */
+    color: #212121;
+    display: block;
+    padding: 0.5em 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  .snip1488 a:hover {
+    color: #ffffff;
+  }
+  .snip1488 a:before {
+    bottom: 25%;
+  }
+  .snip1488 a:after {
+    bottom: 75%;
+  }
+  .snip1488 li:before,
+  .snip1488 li:after,
+  .snip1488 a:before,
+  .snip1488 a:after {
+    background-color: #2980b9;
+    position: absolute;
+    height: 25%;
+    left: 50%;
+    right: 50%;
+    content: '';
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .snip1488 li:before {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+  .snip1488 li:after {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+  }
+  .snip1488 a:before {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  .snip1488 a:after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .snip1488 li:hover:before,
+  .snip1488 li.current:before,
+  .snip1488 li:hover:after,
+  .snip1488 li.current:after,
+  .snip1488 li:hover a:before,
+  .snip1488 li.current a:before,
+  .snip1488 li:hover a:after,
+  .snip1488 li.current a:after {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  .snip1488 li:hover:before,
+  .snip1488 li.current:before {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  .snip1488 li:hover:after,
+  .snip1488 li.current:after {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  .snip1488 li:hover a:before,
+  .snip1488 li.current a:before {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  .snip1488 li:hover a:after,
+  .snip1488 li.current a:after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+  @media(max-width:767px){
+    .snip1537{
+        width: 195px;
+    }
+    .snip1537 h1{
+        font-size: 20px;
+    }
+  }

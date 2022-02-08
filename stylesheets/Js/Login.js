@@ -1,37 +1,5 @@
 //至頂功能
 $(function () {
-    if(localStorage.getItem('userName')==null){
-        document.querySelector('.setup').style.display="none"
-        document.querySelector('.setup2').style.display="none"
-    }else{
-        document.querySelector('.setup').style.display="block"
-        document.querySelector('.login').style.display="none"
-        document.querySelector('.reg').style.display="none"
-        document.querySelector('.login-one').style.display="none"
-        document.querySelector('.reg-one').style.display="none"
-    }
-    var $win = $(window);
-    var $backToTop = $('.js-back-to-top');
-    var $headerTop =$('.site-header');
-    var $headerRun =$('.site-header2');
-    // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
-    $win.scroll(function () {
-        if ($win.scrollTop() > 50) {
-            $backToTop.show();
-            $headerTop.hide();
-            $headerRun.show();
-        } else {
-            $backToTop.hide();
-            $headerTop.show();
-            $headerRun.hide();
-        } 
-    });
-    // 當用戶點擊按鈕時，通過動畫效果返回頭部
-    $backToTop.click(function () {
-        $('html, body').animate({scrollTop: 0}, 200);
-    });
-
-
     const config =({
         apiKey: "AIzaSyB5VkCXdvmei1yH8Wd94DuewfebvMF8nrE",
         authDomain: "concent-4b5ff.firebaseapp.com",
